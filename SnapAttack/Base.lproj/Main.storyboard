@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Cheveuxdange.ttf">
+            <string>Cheveuxdange</string>
+        </array>
+        <array key="DK Cinnabar Brush.ttf">
+            <string>DKCinnabarBrush</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SnapAttack" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Table" translatesAutoresizingMaskIntoConstraints="NO" id="qyx-iV-Kgy">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Snap Attack" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cg7-Mu-YSr">
+                                <rect key="frame" x="20" y="61" width="374" height="166"/>
+                                <fontDescription key="fontDescription" name="DKCinnabarBrush" family="DK Cinnabar Brush" pointSize="60"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time:20" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iFX-cN-Olq">
+                                <rect key="frame" x="0.0" y="220" width="182" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="dCr-8H-YVw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Cheveuxdange" family="Cheveuxdange" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score:0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EWm-tV-qDD">
+                                <rect key="frame" x="206" y="220" width="182" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="Ba0-jh-OwC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Cheveuxdange" family="Cheveuxdange" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blue_cover" translatesAutoresizingMaskIntoConstraints="NO" id="8Ll-z5-yUO">
+                                <rect key="frame" x="20" y="352" width="182" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="9AD-Yx-4tu"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="66k-X2-Wrm">
+                                <rect key="frame" x="20" y="696" width="374" height="166"/>
+                                <fontDescription key="fontDescription" name="DKCinnabarBrush" family="DK Cinnabar Brush" pointSize="65"/>
+                                <state key="normal" title="Start">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="startGameAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="E2P-VA-w3e"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blue_cover" translatesAutoresizingMaskIntoConstraints="NO" id="hy6-W9-aVq">
+                                <rect key="frame" x="212" y="352" width="182" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="Hff-FN-CIn"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="66k-X2-Wrm" firstAttribute="top" secondItem="hy6-W9-aVq" secondAttribute="bottom" constant="94" id="6Er-Kb-Bb3"/>
+                            <constraint firstItem="66k-X2-Wrm" firstAttribute="top" secondItem="8Ll-z5-yUO" secondAttribute="bottom" constant="94" id="731-uz-MiO"/>
+                            <constraint firstItem="iFX-cN-Olq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="9E1-iY-v71"/>
+                            <constraint firstItem="8Ll-z5-yUO" firstAttribute="top" secondItem="iFX-cN-Olq" secondAttribute="bottom" constant="32" id="Bb4-GJ-Wel"/>
+                            <constraint firstItem="hy6-W9-aVq" firstAttribute="width" secondItem="iFX-cN-Olq" secondAttribute="width" id="Do8-ED-fUL"/>
+                            <constraint firstItem="iFX-cN-Olq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="176" id="GNv-4q-SKZ"/>
+                            <constraint firstItem="Cg7-Mu-YSr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="KD4-0g-EOw"/>
+                            <constraint firstItem="EWm-tV-qDD" firstAttribute="width" secondItem="iFX-cN-Olq" secondAttribute="width" id="Mfp-Rj-hqH"/>
+                            <constraint firstAttribute="bottom" secondItem="qyx-iV-Kgy" secondAttribute="bottom" id="Of5-y3-cRG"/>
+                            <constraint firstItem="qyx-iV-Kgy" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="PE6-0Q-iId"/>
+                            <constraint firstItem="66k-X2-Wrm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Piy-6g-Vyf"/>
+                            <constraint firstItem="66k-X2-Wrm" firstAttribute="height" secondItem="Cg7-Mu-YSr" secondAttribute="height" id="QpG-3K-FXg"/>
+                            <constraint firstItem="66k-X2-Wrm" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="RMi-dW-Ear"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="EWm-tV-qDD" secondAttribute="trailing" constant="26" id="a3A-VF-IbU"/>
+                            <constraint firstItem="8Ll-z5-yUO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="fBv-6E-VDm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="66k-X2-Wrm" secondAttribute="trailing" constant="20" id="hZk-uT-j0V"/>
+                            <constraint firstItem="qyx-iV-Kgy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="hzV-tO-AAR"/>
+                            <constraint firstItem="EWm-tV-qDD" firstAttribute="leading" secondItem="iFX-cN-Olq" secondAttribute="trailing" constant="24" id="s4V-6K-knh"/>
+                            <constraint firstItem="8Ll-z5-yUO" firstAttribute="width" secondItem="iFX-cN-Olq" secondAttribute="width" id="s6U-FH-5dB"/>
+                            <constraint firstItem="EWm-tV-qDD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="176" id="sIN-qG-JG1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Cg7-Mu-YSr" secondAttribute="trailing" constant="20" id="sph-kd-Pdv"/>
+                            <constraint firstAttribute="trailing" secondItem="qyx-iV-Kgy" secondAttribute="trailing" id="tP0-KI-zvV"/>
+                            <constraint firstItem="Cg7-Mu-YSr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="17" id="vln-ER-L0z"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hy6-W9-aVq" secondAttribute="trailing" constant="20" id="wcV-48-tbW"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="firstCard" destination="8Ll-z5-yUO" id="Pnc-TZ-lGN"/>
+                        <outlet property="scoreLabel" destination="EWm-tV-qDD" id="6qh-Zc-6kE"/>
+                        <outlet property="secondCard" destination="hy6-W9-aVq" id="pUS-Tq-BH1"/>
+                        <outlet property="startGame" destination="66k-X2-Wrm" id="yS5-uE-oWv"/>
+                        <outlet property="timeLabel" destination="iFX-cN-Olq" id="JSx-hv-OXL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="28.985507246376812" y="70.982142857142847"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Table" width="1980" height="1200"/>
+        <image name="blue_cover" width="500" height="726"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
